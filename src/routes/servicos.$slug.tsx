@@ -70,7 +70,7 @@ function ServicoPage() {
       {/* CORPO */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-4xl space-y-6 px-4 text-neutral-700 leading-relaxed sm:px-6 lg:px-8">
-          {data.body.map((p, i) => (
+          {data.body.map((p: string, i: number) => (
             <p key={i}>{p}</p>
           ))}
         </div>
