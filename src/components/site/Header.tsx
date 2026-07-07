@@ -20,12 +20,12 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Esther Monteiro" className="h-12 w-auto" />
+      <div className="mx-auto grid h-24 max-w-7xl grid-cols-3 items-center px-4 sm:px-6 lg:px-8">
+        <Link to="/" className="flex items-center justify-self-start">
+          <img src={logo} alt="Esther Monteiro" className="h-16 w-auto" />
         </Link>
 
-        <nav className="hidden items-center gap-10 lg:flex">
+        <nav className="hidden items-center justify-center gap-10 lg:flex">
           {nav.map((item) => (
             <Link
               key={item.to}
@@ -64,7 +64,7 @@ export function Header() {
           </div>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center justify-end gap-3">
           <a
             href="#contato"
             className="hidden rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:opacity-90 sm:inline-flex"
