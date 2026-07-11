@@ -52,7 +52,12 @@ export function Footer() {
           <h3 className="mb-4 text-sm font-bold tracking-wider text-white">
             CANAIS DE COMUNICAÇÃO
           </h3>
-          <p className="text-sm text-white/70">contato@esthermonteiro.com.br</p>
+          <a
+            href="mailto:contato@esthermonteiro.com.br"
+            className="text-sm text-white/70 transition hover:text-brand-orange"
+          >
+            contato@esthermonteiro.com.br
+          </a>
           <div className="mt-4 flex gap-3">
             <a
               href="#"

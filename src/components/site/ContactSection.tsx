@@ -1,6 +1,9 @@
 import { Instagram, MessageCircle, Send } from "lucide-react";
 import { useState } from "react";
 
+const inputClass =
+  "w-full rounded-lg border border-transparent bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-black/20";
+
 const servicoOptions = [
   "Crédito",
   "Estruturação",
@@ -46,9 +49,12 @@ export function ContactSection() {
             in in ornare. Mattis sed sed tellus fringilla quam praesent eu risus
             consectetur.
           </p>
-          <p className="mt-6 text-sm font-medium text-neutral-800">
+          <a
+            href="mailto:contato@esthermonteiro.com.br"
+            className="mt-6 text-sm font-medium text-neutral-800 transition hover:text-brand-orange"
+          >
             contato@esthermonteiro.com.br
-          </p>
+          </a>
           <div className="mt-4 flex gap-3">
             <a
               href="#"
@@ -77,7 +83,7 @@ export function ContactSection() {
                 value={form.nome}
                 onChange={(e) => setForm({ ...form, nome: e.target.value })}
                 placeholder="Digite o seu nome aqui"
-                className="input-white"
+                className={inputClass}
                 required
               />
             </Field>
@@ -86,7 +92,7 @@ export function ContactSection() {
                 value={form.telefone}
                 onChange={(e) => setForm({ ...form, telefone: e.target.value })}
                 placeholder="(00) 00000-0000"
-                className="input-white"
+                className={inputClass}
                 required
               />
             </Field>
@@ -96,7 +102,7 @@ export function ContactSection() {
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 placeholder="Digite o seu e-mail aqui"
-                className="input-white"
+                className={inputClass}
                 required
               />
             </Field>
@@ -104,7 +110,7 @@ export function ContactSection() {
               <select
                 value={form.motivo}
                 onChange={(e) => setForm({ ...form, motivo: e.target.value })}
-                className="input-white"
+                className={inputClass}
               >
                 <option value="">Selecione o motivo de interesse</option>
                 <option value="consultoria">Consultoria</option>
@@ -138,29 +144,13 @@ export function ContactSection() {
           <div className="mt-6 flex justify-end">
             <button
               type="submit"
-              className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-brand-orange shadow-sm transition hover:bg-neutral-100"
+              className="inline-flex items-center gap-2 rounded-lg bg-brand-navy-deep px-6 py-2.5 text-sm font-bold text-white shadow-sm transition hover:opacity-90"
             >
               ENVIAR <Send className="h-4 w-4" />
             </button>
           </div>
         </form>
       </div>
-
-      <style>{`
-        .input-white {
-          width: 100%;
-          border-radius: 8px;
-          background: white;
-          padding: 10px 12px;
-          font-size: 14px;
-          color: #171717;
-          outline: none;
-          border: 1px solid transparent;
-          transition: border-color .15s;
-        }
-        .input-white:focus { border-color: rgba(0,0,0,.2); }
-        .input-white::placeholder { color: #9ca3af; }
-      `}</style>
     </section>
   );
 }

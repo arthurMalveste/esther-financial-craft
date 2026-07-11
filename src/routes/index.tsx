@@ -125,11 +125,13 @@ function Index() {
           </div>
 
           <div className="relative flex justify-center md:justify-end">
-            <img
-              src={estherHero}
-              alt="Esther Monteiro"
-              className="h-[420px] w-auto object-contain drop-shadow-2xl sm:h-[500px]"
-            />
+            <div className="overflow-hidden rounded-3xl ring-1 ring-white/10 shadow-2xl shadow-black/40">
+              <img
+                src={estherHero}
+                alt="Esther Monteiro"
+                className="h-[340px] w-[280px] object-cover sm:h-[420px] sm:w-[340px]"
+              />
+            </div>
           </div>
         </div>
 
@@ -199,9 +201,7 @@ function Index() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             {beneficios.map((b) => (
               <div key={b} className="flex items-center gap-2">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-brand-orange text-white">
-                  <Check className="h-3.5 w-3.5" strokeWidth={3} />
-                </span>
+                <Check className="h-4 w-4 shrink-0 text-brand-orange" strokeWidth={3} />
                 <span className="text-sm font-medium text-neutral-800">{b}</span>
               </div>
             ))}
@@ -218,12 +218,9 @@ function Index() {
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {metodologia.map((m) => (
-              <div
-                key={m.title}
-                className="rounded-2xl bg-brand-slate p-6 text-neutral-900"
-              >
+              <div key={m.title} className="rounded-2xl bg-brand-slate p-6 text-white">
                 <h3 className="text-center text-lg font-bold">{m.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-neutral-800">{m.desc}</p>
+                <p className="mt-3 text-sm leading-relaxed text-white/80">{m.desc}</p>
               </div>
             ))}
           </div>
@@ -246,9 +243,7 @@ function Index() {
             <ul className="mt-6 space-y-4">
               {diferenciais.map((d, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-orange text-white">
-                    <Check className="h-3.5 w-3.5" strokeWidth={3} />
-                  </span>
+                  <Check className="mt-0.5 h-5 w-5 shrink-0 text-brand-orange" strokeWidth={3} />
                   <span className="text-sm text-neutral-700">{d}</span>
                 </li>
               ))}

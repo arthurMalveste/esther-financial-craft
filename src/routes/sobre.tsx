@@ -33,12 +33,12 @@ function SobrePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-deep/90 via-brand-navy-deep/60 to-transparent" />
 
-        <div className="relative mx-auto grid max-w-7xl grid-cols-1 items-center px-4 py-24 sm:px-6 md:grid-cols-2 lg:px-8">
-          <div>
+        <div className="relative mx-auto max-w-7xl px-4 py-28 sm:px-6 md:py-36 lg:px-8">
+          <div className="max-w-lg">
             <h1 className="text-5xl font-extrabold tracking-tight text-brand-orange sm:text-6xl">
               SOBRE MIM
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/90">
+            <p className="mt-5 text-base leading-relaxed text-white/90">
               Tempor semper faucibus convallis magna nunc lacus. Magna ipsum massa arcu
               pulvinar. Consectetur odio nulla dui at lectus amet tortor pretium odio. Et
               convallis quam nunc venenatis. Consectetur quis viverra gravida euismod.
@@ -47,7 +47,6 @@ function SobrePage() {
               vitae.
             </p>
           </div>
-          <div />
         </div>
       </section>
 
