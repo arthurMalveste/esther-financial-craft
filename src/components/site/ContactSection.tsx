@@ -1,5 +1,6 @@
-import { Instagram, MessageCircle, Send } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import { buildWhatsAppUrl } from "@/lib/contact";
 
 const inputClass =
   "w-full rounded-lg border border-transparent bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-black/20";
@@ -10,6 +11,13 @@ const servicoOptions = [
   "Mercado Financeiro",
   "Proteção",
   "Financiamento",
+];
+
+const motivoOptions = [
+  { value: "consultoria", label: "Consultoria" },
+  { value: "credito", label: "Crédito" },
+  { value: "investimento", label: "Investimento" },
+  { value: "outro", label: "Outro" },
 ];
 
 export function ContactSection() {
@@ -32,9 +40,21 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Placeholder submission
-    console.log("Contato enviado:", form);
-    alert("Mensagem enviada! Entraremos em contato em breve.");
+
+    const lines = [
+      "Olá! Vim pelo site e gostaria de mais informações.",
+      "",
+      `Nome: ${form.nome}`,
+      `Telefone: ${form.telefone}`,
+      `E-mail: ${form.email}`,
+    ];
+    if (form.motivo) {
+      const label = motivoOptions.find((m) => m.value === form.motivo)?.label ?? form.motivo;
+      lines.push(`Motivo de interesse: ${label}`);
+    }
+    if (form.servicos.length > 0) lines.push(`Serviço(s) desejado(s): ${form.servicos.join(", ")}`);
+
+    window.open(buildWhatsAppUrl(lines.join("\n")), "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -64,7 +84,9 @@ export function ContactSection() {
               <Instagram className="h-5 w-5" />
             </a>
             <a
-              href="#"
+              href={buildWhatsAppUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-md border border-neutral-300 text-neutral-700 transition hover:border-brand-orange hover:text-brand-orange"
               aria-label="WhatsApp"
             >
@@ -113,10 +135,11 @@ export function ContactSection() {
                 className={inputClass}
               >
                 <option value="">Selecione o motivo de interesse</option>
-                <option value="consultoria">Consultoria</option>
-                <option value="credito">Crédito</option>
-                <option value="investimento">Investimento</option>
-                <option value="outro">Outro</option>
+                {motivoOptions.map((m) => (
+                  <option key={m.value} value={m.value}>
+                    {m.label}
+                  </option>
+                ))}
               </select>
             </Field>
           </div>
@@ -146,7 +169,7 @@ export function ContactSection() {
               type="submit"
               className="inline-flex items-center gap-2 rounded-lg bg-brand-navy-deep px-6 py-2.5 text-sm font-bold text-white shadow-sm transition hover:opacity-90"
             >
-              ENVIAR <Send className="h-4 w-4" />
+              ENVIAR PELO WHATSAPP <MessageCircle className="h-4 w-4" />
             </button>
           </div>
         </form>

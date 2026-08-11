@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
+import { buildWhatsAppUrl } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -67,7 +68,9 @@ export function Footer() {
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href="#"
+              href={buildWhatsAppUrl()}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-white/10 transition hover:bg-brand-orange"
               aria-label="WhatsApp"
             >
