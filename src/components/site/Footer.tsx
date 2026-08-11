@@ -81,7 +81,7 @@ export function Footer() {
             RAZÃO SOCIAL · CNPJ
           </h3>
           <p className="text-sm text-white/70">
-            Esther Monteiro Consultoria e Financiamentos LTDA
+            Esther Monteiro Consórcios e Financiamentos LTDA
           </p>
           <p className="mt-2 text-sm text-white/70">© 2026 Todos os direitos reservados.</p>
         </div>

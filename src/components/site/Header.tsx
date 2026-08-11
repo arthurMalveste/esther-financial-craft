@@ -26,7 +26,7 @@ export function Header() {
           <span className="flex flex-col leading-tight">
             <span className="text-base font-bold text-neutral-900">Esther Monteiro</span>
             <span className="text-[10px] font-semibold uppercase tracking-wide text-brand-orange">
-              Consultoria e Financiamentos
+              Consórcios e Financiamentos
             </span>
           </span>
         </Link>

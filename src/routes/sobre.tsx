@@ -28,8 +28,8 @@ function SobrePage() {
       {/* HERO */}
       <section className="relative overflow-hidden bg-brand-navy-deep">
         <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${estherSobre})` }}
+          className="absolute inset-0 bg-cover"
+          style={{ backgroundImage: `url(${estherSobre})`, backgroundPosition: "center 30%" }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-navy-deep/90 via-brand-navy-deep/60 to-transparent" />
 

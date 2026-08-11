@@ -71,13 +71,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Esther Monteiro — Consultoria e Financiamentos" },
+      { title: "Esther Monteiro — Consórcios e Financiamentos" },
       {
         name: "description",
         content:
           "Consultoria financeira estratégica com Esther Monteiro. Crédito, estruturação, mercado financeiro e proteção patrimonial.",
       },
-      { property: "og:title", content: "Esther Monteiro — Consultoria e Financiamentos" },
+      { property: "og:title", content: "Esther Monteiro — Consórcios e Financiamentos" },
       {
         property: "og:description",
         content:
