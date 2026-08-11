@@ -61,7 +61,7 @@ function ServicoPage() {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative mx-auto flex min-h-[380px] max-w-7xl items-center justify-center px-4 py-24 sm:px-6 lg:px-8">
-          <h1 className="text-center text-5xl font-extrabold tracking-tight text-brand-orange sm:text-6xl">
+          <h1 className="text-center text-3xl font-extrabold tracking-tight text-brand-orange sm:text-4xl md:text-5xl lg:text-6xl">
             {data.title}
           </h1>
         </div>
