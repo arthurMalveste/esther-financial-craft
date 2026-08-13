@@ -10,7 +10,7 @@ export const Route = createFileRoute("/sobre")({
       {
         name: "description",
         content:
-          "Conheça a trajetória de Esther Monteiro, consultora financeira especialista em crédito, estruturação e proteção patrimonial.",
+          "Conheça a trajetória de Esther Monteiro, consultora e analista de crédito especialista em consórcios, financiamentos e proteção patrimonial.",
       },
       { property: "og:title", content: "Sobre mim — Esther Monteiro" },
       {
@@ -39,12 +39,13 @@ function SobrePage() {
               SOBRE MIM
             </h1>
             <p className="mt-5 text-base leading-relaxed text-white/90">
-              Tempor semper faucibus convallis magna nunc lacus. Magna ipsum massa arcu
-              pulvinar. Consectetur odio nulla dui at lectus amet tortor pretium odio. Et
-              convallis quam nunc venenatis. Consectetur quis viverra gravida euismod.
-              Posuere habitasse urna suspendisse placerat sed sed. Tortor suspendisse
-              aliquet elementum nec. Id risus enim dictum eu pellentesque dignissim in ut
-              vitae.
+              Sou Esther Monteiro e trabalho ajudando pessoas, empresários e famílias a
+              encontrarem caminhos mais seguros para seus projetos e para o patrimônio
+              que construíram. Minha atuação reúne consórcios, financiamentos,
+              levantamento de capital e blindagem patrimonial. Cada atendimento começa
+              com uma conversa: primeiro eu procuro entender o momento, o objetivo e as
+              possibilidades; depois, organizamos juntos uma estratégia clara e
+              acompanhamos cada etapa com proximidade e responsabilidade.
             </p>
           </div>
         </div>
@@ -58,22 +59,24 @@ function SobrePage() {
           </h2>
           <div className="mt-8 space-y-6 text-left text-neutral-700 leading-relaxed sm:text-center">
             <p>
-              In ac sollicitudin senectus enim malesuada vestibulum. Leo adipiscing eget
-              duis amet vel facilisis. Eu non ipsum purus tristique. Massa dolor
-              consectetur ipsum nam amet consequat tincidunt consectetur. Feugiat nulla
-              blandit id semper dolor consectetur cum a lectus malesuada cursus commodo
-              odio donec. Maecenas senectus et velit tortor placerat elit.
+              Com mais de 15 anos de atuação no mercado financeiro, Esther Monteiro
+              construiu sua trajetória como consultora e analista de crédito, dedicada a
+              viabilizar consórcios e financiamentos com técnica e segurança jurídica.
             </p>
             <p>
-              Vel id pulvinar in blandit hendrerit egestas. Enim ac vel scelerisque
-              egestas amet sed nunc quis mollis. Purus mauris sit ante eget eget id.
-              Ligula convallis pulvinar diam blandit tincidunt scelerisque. Vulputate
-              adipiscing morbi neque sed lacus purus.
+              Seu escritório, com atuação em Barretos e Alphaville, atende pessoas
+              físicas, empresários e clientes do agronegócio que buscam desde a
+              aquisição de bens até a estruturação de operações mais complexas. Grande
+              parte da sua carteira é formada por clientes de longa data, que retornam e
+              indicam novos negócios — reflexo direto da confiança construída ao longo
+              dos anos.
             </p>
             <p>
-              Cras vestibulum lacinia dictum praesent. Aliquet urna tellus arcu semper
-              volutpat vulputate. Vitae leo lorem magna neque neque vulputate ipsum
-              tellus. Fringilla tortor turpis id in ipsum morbi mauris ac.
+              Além do crédito, Esther também atua na corretagem de imóveis de alto
+              padrão, unindo sua visão analítica à identificação de boas oportunidades
+              para cada perfil de cliente. Em cada atendimento, o compromisso é o mesmo:
+              entender o momento do cliente, construir uma estratégia clara e acompanhar
+              de perto até a conclusão.
             </p>
           </div>
         </div>

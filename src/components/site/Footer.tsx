@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, MessageCircle } from "lucide-react";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, EMAIL, INSTAGRAM_URL } from "@/lib/contact";
 
 export function Footer() {
   return (
@@ -29,7 +29,7 @@ export function Footer() {
                 params={{ slug: "mercado-financeiro" }}
                 className="transition hover:text-brand-orange"
               >
-                Mercado Financeiro
+                Mercado Imobiliário
               </Link>
             </li>
             <li>
@@ -54,14 +54,16 @@ export function Footer() {
             CANAIS DE COMUNICAÇÃO
           </h3>
           <a
-            href="mailto:contato@esthermonteiro.com.br"
+            href={`mailto:${EMAIL}`}
             className="text-sm text-white/70 transition hover:text-brand-orange"
           >
-            contato@esthermonteiro.com.br
+            {EMAIL}
           </a>
           <div className="mt-4 flex gap-3">
             <a
-              href="#"
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-9 w-9 items-center justify-center rounded-md bg-white/10 transition hover:bg-brand-orange"
               aria-label="Instagram"
             >

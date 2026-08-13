@@ -21,17 +21,17 @@ const servicos = [
   {
     slug: "credito-estruturacao",
     title: "Crédito e Estruturação Financeira",
-    desc: "Sed id vitae donec nam quam vulputate. Sit vel id scelerisque risus ornare integer mattis consectetur. Interdum lorem a augue morbi. Amet in id adipiscing euismod non sem. Diam.",
+    desc: "Consórcios, financiamentos e levantamento de capital para aquisição de imóveis, veículos, máquinas e expansão de negócios, sempre alinhados ao perfil e aos objetivos de cada cliente.",
   },
   {
     slug: "mercado-financeiro",
-    title: "Mercado Financeiro",
-    desc: "Sed id vitae donec nam quam vulputate. Sit vel id scelerisque risus ornare integer mattis consectetur. Interdum lorem a augue morbi. Amet in id adipiscing euismod non sem. Diam.",
+    title: "Mercado Imobiliário",
+    desc: "Corretagem de imóveis de alto padrão, unindo a análise de crédito da Esther à identificação de boas oportunidades para pessoas físicas, empresários e clientes do agronegócio.",
   },
   {
     slug: "protecao-blindagem",
     title: "Proteção e Blindagem",
-    desc: "Sed id vitae donec nam quam vulputate. Sit vel id scelerisque risus ornare integer mattis consectetur. Interdum lorem a augue morbi. Amet in id adipiscing euismod non sem. Diam.",
+    desc: "Estratégias de organização, proteção e sucessão do patrimônio, com apoio jurídico e contábil especializado quando necessário.",
   },
 ];
 
@@ -46,47 +46,47 @@ const beneficios = [
 const metodologia = [
   {
     title: "Diagnóstico Profundo",
-    desc: "Tortor dolor est at tincidunt eleifend. Suspendisse ullamcorper feugiat turpis convallis quam nulla urna praesent egestas. Integer eget dolor arcu nam purus nibh donec.",
+    desc: "Escuta atenta do momento do cliente, seguida de um diagnóstico completo da situação financeira e patrimonial.",
   },
   {
     title: "Planejamento Personalizado",
-    desc: "Tortor dolor est at tincidunt eleifend. Suspendisse ullamcorper feugiat turpis convallis quam nulla urna praesent egestas. Integer eget dolor arcu nam purus nibh donec.",
+    desc: "Construção da estratégia mais adequada ao perfil, aos objetivos e ao momento de cada cliente.",
   },
   {
     title: "Execução Técnica",
-    desc: "Tortor dolor est at tincidunt eleifend. Suspendisse ullamcorper feugiat turpis convallis quam nulla urna praesent egestas. Integer eget dolor arcu nam purus nibh donec.",
+    desc: "Comparação entre possibilidades, instituições e produtos, com organização documental completa do processo.",
   },
   {
     title: "Acompanhamento Contínuo",
-    desc: "Tortor dolor est at tincidunt eleifend. Suspendisse ullamcorper feugiat turpis convallis quam nulla urna praesent egestas. Integer eget dolor arcu nam purus nibh donec.",
+    desc: "Acompanhamento próximo até a conclusão, com orientação sobre os próximos passos.",
   },
 ];
 
 const diferenciais = [
-  "Morbi eget quis enim tellus. Consectetur.",
-  "Morbi eget quis enim tellus. Consectetur.",
-  "Morbi eget quis enim tellus. Consectetur.",
-  "Morbi eget quis enim tellus. Consectetur.",
+  "Atendimento próximo e personalizado, em um mercado cada vez mais automatizado por bancos e plataformas digitais.",
+  "Mais de 15 anos de experiência como consultora e analista de crédito, com domínio de toda a estrutura de uma venda.",
+  "Uma carteira construída por clientes que voltam a fazer negócio e indicam novos clientes.",
+  "Acompanhamento em cada etapa, da análise inicial até a conclusão do processo.",
 ];
 
 const depoimentos = [
   {
     quote:
-      "Uma sed quam mi cursus tellus tellus. Sociis nunc a fringilla interdum eros. Proin tempor dui ut pulvinar volutpat facilisi orci sem eleifend. Amet tellus sit mi malesuada eleifend. Cras laoreet.",
-    name: "Nome da Pessoa",
-    role: "Profissão",
+      "Uma família que deseja planejar a compra de um imóvel sem assumir uma decisão apressada — e por isso busca entender antes todas as possibilidades de consórcio.",
+    name: "Exemplo simulado",
+    role: "Planejamento de consórcio",
   },
   {
     quote:
-      "Uma sed quam mi cursus tellus tellus. Sociis nunc a fringilla interdum eros. Proin tempor dui ut pulvinar volutpat facilisi orci sem eleifend. Amet tellus sit mi malesuada eleifend. Cras laoreet.",
-    name: "Nome da Pessoa",
-    role: "Profissão",
+      "Uma empresa que precisa adquirir uma máquina e quer comparar prazo, parcela, garantia e impacto no caixa antes de fechar o financiamento.",
+    name: "Exemplo simulado",
+    role: "Estruturação de financiamento",
   },
   {
     quote:
-      "Uma sed quam mi cursus tellus tellus. Sociis nunc a fringilla interdum eros. Proin tempor dui ut pulvinar volutpat facilisi orci sem eleifend. Amet tellus sit mi malesuada eleifend. Cras laoreet.",
-    name: "Nome da Pessoa",
-    role: "Profissão",
+      "Uma família empresária que deseja organizar bens, sociedade e sucessão com planejamento e apoio jurídico especializado.",
+    name: "Exemplo simulado",
+    role: "Blindagem patrimonial",
   },
 ];
 
@@ -107,12 +107,11 @@ function Index() {
               Início
             </p>
             <h1 className="mt-3 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
-              Estratégia financeira que transforma decisões em resultados reais.
+              Soluções financeiras pensadas para cada momento da sua vida e do seu negócio.
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-white/80">
-              Consultoria especializada em crédito, estruturação e proteção patrimonial.
-              Cada operação é conduzida com técnica, segurança jurídica e visão de longo
-              prazo para viabilizar os melhores caminhos.
+              Consórcios, financiamentos, levantamento de capital e blindagem patrimonial
+              com atendimento próximo, estratégia e acompanhamento em cada etapa.
             </p>
             <div className="mt-7">
               <Link
@@ -159,8 +158,8 @@ function Index() {
             SERVIÇOS
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-center text-neutral-600">
-            Lorem ipsum dolor sit amet consectetur. Egestas nullam duis euismod nibh.
-            Accumsan.
+            Consórcios, financiamentos e proteção patrimonial com técnica, segurança
+            jurídica e acompanhamento em cada etapa.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -256,8 +255,8 @@ function Index() {
       <section className="bg-neutral-50 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="mx-auto max-w-3xl text-center text-lg font-bold text-neutral-900 sm:text-xl">
-            A confiança conquistada ao longo dos anos é reflexo de consistência, técnica e
-            compromisso com resultados reais
+            Veja como cada situação pode ser conduzida — exemplos ilustrativos, sem
+            compromisso com resultado
           </h2>
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">

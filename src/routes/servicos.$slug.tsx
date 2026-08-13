@@ -7,25 +7,25 @@ const servicos: Record<string, { title: string; body: string[] }> = {
   "credito-estruturacao": {
     title: "CRÉDITO E ESTRUTURAÇÃO",
     body: [
-      "Aliquam auctor malesuada morbi quis. Nisi feugiat nulla ultricies maecenas cursus. Eleifend pellentesque egestas eget ut morbi nec nunc pretium tortor. Elementum risus nam pretium fames ultrices. Arcu non nisi leo tempor. Habitasse volutpat nulla arcu elementum ac feugiat turpis. Quis non a sapien euismod velit porttitor enim. Ac amet velit facilisi magna adipiscing sed blandit.",
-      "Pulvinar placerat maecenas cursus velit nam non sollicitudin sit. Ut felis eget suspendisse platea tellus dui. Fermentum sed elementum dictum dictum pellentesque. Dui ridiculus amet eget gravida dui tempus varius pellentesque. Sollicitudin quam sit mattis a iaculis aliquet pharetra in. Adipiscing rhoncus cursus nulla in nec. Quis iaculis scelerisque quis amet et interdum eget tortor nunc.",
-      "Ut augue imperdiet vel nisi diam nibh sapien. Ultrices eu neque posuere aliquam sodales etiam morbi. Egestas sit ac ut aliquam nec.",
+      "Consórcios pensados para a aquisição de imóveis, veículos, máquinas e formação de patrimônio, sempre de acordo com o perfil e os objetivos de cada cliente.",
+      "Busca e estruturação de alternativas de financiamento para aquisição, expansão e realização de projetos pessoais ou empresariais, incluindo a análise de possibilidades para capital de giro, investimentos e utilização estratégica de ativos e garantias.",
+      "As soluções são construídas de forma personalizada. Aprovação de crédito, taxas, prazos, garantias e contemplação dependem das regras, análises e condições de cada instituição ou grupo — por isso, cada atendimento é avaliado individualmente.",
     ],
   },
   "mercado-financeiro": {
-    title: "MERCADO FINANCEIRO",
+    title: "MERCADO IMOBILIÁRIO",
     body: [
-      "Assessoria completa em investimentos e alocação estratégica de capital. Nisi feugiat nulla ultricies maecenas cursus. Eleifend pellentesque egestas eget ut morbi nec nunc pretium tortor. Elementum risus nam pretium fames ultrices.",
-      "Análise técnica e fundamentalista aliada à visão de longo prazo. Pulvinar placerat maecenas cursus velit nam non sollicitudin sit. Ut felis eget suspendisse platea tellus dui.",
-      "Acompanhamento contínuo da carteira e revisão periódica das estratégias conforme os cenários econômicos.",
+      "Além da estruturação de crédito, Esther Monteiro atua na corretagem de imóveis de alto padrão, reunindo sua experiência como consultora e analista de crédito à identificação de boas oportunidades para cada cliente.",
+      "O atendimento abrange pessoas físicas, empresários e clientes do agronegócio interessados em aquisição, investimento ou diversificação patrimonial por meio de imóveis.",
+      "Por entender a estrutura completa de uma venda — do crédito à documentação —, Esther acompanha o cliente com uma visão que vai além da simples intermediação imobiliária.",
     ],
   },
   "protecao-blindagem": {
     title: "PROTEÇÃO E BLINDAGEM",
     body: [
-      "Estruturação de proteção patrimonial e blindagem jurídica. Nisi feugiat nulla ultricies maecenas cursus. Eleifend pellentesque egestas eget ut morbi nec nunc pretium tortor.",
-      "Planejamento sucessório e organização societária com segurança jurídica. Pulvinar placerat maecenas cursus velit nam non sollicitudin sit.",
-      "Consultoria integrada com equipe jurídica e contábil para viabilizar estruturas sólidas e duradouras.",
+      "Estratégias de organização, proteção e sucessão do patrimônio, com apoio jurídico e contábil especializado quando necessário.",
+      "A blindagem patrimonial envolve diagnóstico, organização societária, planejamento patrimonial e sucessório — sempre com suporte jurídico e contábil nas etapas em que for necessário.",
+      "O objetivo é dar mais segurança e previsibilidade para pessoas físicas e empresários que desejam organizar e proteger o patrimônio construído ao longo dos anos.",
     ],
   },
 };

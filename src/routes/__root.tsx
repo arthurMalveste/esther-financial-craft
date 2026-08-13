@@ -75,7 +75,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Consultoria financeira estratégica com Esther Monteiro. Crédito, estruturação, mercado financeiro e proteção patrimonial.",
+          "Consultoria financeira estratégica com Esther Monteiro. Consórcios, financiamentos, imóveis e proteção patrimonial.",
       },
       { property: "og:title", content: "Esther Monteiro — Consórcios e Financiamentos" },
       {

@@ -10,7 +10,7 @@ const nav = [
 
 const servicos = [
   { slug: "credito-estruturacao", label: "Crédito e Estruturação" },
-  { slug: "mercado-financeiro", label: "Mercado Financeiro" },
+  { slug: "mercado-financeiro", label: "Mercado Imobiliário" },
   { slug: "protecao-blindagem", label: "Proteção e Blindagem" },
 ];
 

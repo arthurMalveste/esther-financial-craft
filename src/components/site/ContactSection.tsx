@@ -1,22 +1,17 @@
 import { Instagram, MessageCircle } from "lucide-react";
 import { useState } from "react";
-import { buildWhatsAppUrl } from "@/lib/contact";
+import { buildWhatsAppUrl, EMAIL, INSTAGRAM_URL } from "@/lib/contact";
 
 const inputClass =
   "w-full rounded-lg border border-transparent bg-white px-3 py-2.5 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-black/20";
 
-const servicoOptions = [
-  "Crédito",
-  "Estruturação",
-  "Mercado Financeiro",
-  "Proteção",
-  "Financiamento",
-];
+const servicoOptions = ["Consórcio", "Financiamento", "Imóveis", "Proteção Patrimonial"];
 
 const motivoOptions = [
-  { value: "consultoria", label: "Consultoria" },
-  { value: "credito", label: "Crédito" },
-  { value: "investimento", label: "Investimento" },
+  { value: "consorcio", label: "Consórcio" },
+  { value: "financiamento", label: "Financiamento" },
+  { value: "imoveis", label: "Imóveis" },
+  { value: "protecao", label: "Proteção Patrimonial" },
   { value: "outro", label: "Outro" },
 ];
 
@@ -65,19 +60,21 @@ export function ContactSection() {
             ENTRE EM CONTATO
           </h2>
           <p className="mt-4 max-w-md text-neutral-600">
-            Turpis pharetra nibh massa dui. Tellus faucibus dui cras porta est dictumst
-            in in ornare. Mattis sed sed tellus fringilla quam praesent eu risus
-            consectetur.
+            Conte pra Esther qual é o seu objetivo — aquisição de um bem, expansão do
+            negócio ou proteção do patrimônio — e receba uma orientação personalizada
+            sobre o melhor caminho.
           </p>
           <a
-            href="mailto:contato@esthermonteiro.com.br"
+            href={`mailto:${EMAIL}`}
             className="mt-6 text-sm font-medium text-neutral-800 transition hover:text-brand-orange"
           >
-            contato@esthermonteiro.com.br
+            {EMAIL}
           </a>
           <div className="mt-4 flex gap-3">
             <a
-              href="#"
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex h-10 w-10 items-center justify-center rounded-md border border-neutral-300 text-neutral-700 transition hover:border-brand-orange hover:text-brand-orange"
               aria-label="Instagram"
             >
