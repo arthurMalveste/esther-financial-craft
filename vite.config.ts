@@ -3,9 +3,8 @@ import viteReact from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import { tanstackStart } from "@tanstack/react-start/plugin/vite";
-import { nitro } from "nitro/vite";
 
-export default defineConfig(({ mode, command }) => {
+export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "VITE_");
   const envDefine: Record<string, string> = {};
   for (const [key, value] of Object.entries(env)) {
@@ -28,20 +27,29 @@ export default defineConfig(({ mode, command }) => {
       ],
     },
     server: { host: true, port: 8080 },
+    environments: {
+      // The deployable static site. `dist` is the default publish directory of
+      // the Vite presets on Cloudflare Pages, Netlify and Vercel.
+      client: { build: { outDir: "dist" } },
+      // Server bundle used only at build time to render the HTML; kept out of
+      // `dist` so it's never published.
+      ssr: { build: { outDir: "dist-ssr" } },
+    },
     plugins: [
       tailwindcss(),
       tsConfigPaths({ projects: ["./tsconfig.json"] }),
       tanstackStart({
-        // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-        server: { entry: "server" },
+        // Static site: every page is rendered to plain HTML at build time
+        // (starting at "/" and following internal links), so `dist` can be
+        // served from the root of a domain by any static host — no server needed.
+        // The 404 page is rendered separately by scripts/prerender-404.mjs.
+        prerender: { enabled: true, crawlLinks: true },
         importProtection: {
           behavior: "error",
           client: { files: ["**/server/**"], specifiers: ["server-only"] },
         },
       }),
-      // Nitro builds the deployable server output; only needed for `vite build`.
-      command === "build" ? nitro() : undefined,
       viteReact(),
-    ].filter(Boolean),
+    ],
   };
 });
