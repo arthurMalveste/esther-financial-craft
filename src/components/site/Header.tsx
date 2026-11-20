@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { useState } from "react";
-import logoIcon from "@/assets/logo-icon.png";
+import logo from "@/assets/logo.png";
 
 const nav = [
   { to: "/", label: "Início" },
@@ -21,16 +21,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur">
       <div className="mx-auto grid min-h-20 max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-3 sm:px-6 lg:px-8">
-        <Link to="/" className="flex min-w-0 items-center gap-2 sm:gap-2.5 justify-self-start">
-          <img src={logoIcon} alt="" className="h-9 w-auto shrink-0 sm:h-10" />
-          <span className="flex min-w-0 flex-col leading-tight">
-            <span className="whitespace-nowrap text-sm font-bold text-neutral-900 sm:text-base">
-              Esther Monteiro
-            </span>
-            <span className="whitespace-nowrap text-[9px] font-semibold uppercase tracking-wide text-brand-orange sm:text-[10px]">
-              Consórcios e Financiamentos
-            </span>
-          </span>
+        <Link to="/" className="flex shrink-0 items-center justify-self-start" aria-label="Esther Monteiro – Consórcios e Financiamentos">
+          <img src={logo} alt="Esther Monteiro – Consórcios e Financiamentos" className="h-14 w-auto sm:h-16 lg:h-20" />
         </Link>
 
         <nav className="hidden items-center justify-center gap-10 lg:flex">
